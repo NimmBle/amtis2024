@@ -29,7 +29,7 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("open");
 });
 
-const url = "https://api.jsonbin.io/v3/c/666852e0e41b4d34e401ca3f/latest";
+const url = "https://api.jsonbin.io/v3/b/666852e0e41b4d34e401ca3f/";
 
 async function getAllData() {
     try {
