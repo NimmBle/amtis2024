@@ -131,8 +131,10 @@ async function GenerateHTML() {
    </div>`;
     }
 }
+window.addEventListener("DOMContentLoaded", () => {
+    GenerateHTML();
+})
 
-GenerateHTML();
 
 async function submitForm() {}
 
