@@ -36,7 +36,7 @@ async function getAllData() {
         const response = await fetch(url, {
             headers: {
                 "X-Master-Key":
-                    "$2a$10$k5K7S3FMsdynDI8ZI6/YeOY0bK.zGXjegol2aeliGb.XZ4NxhEY8C",
+                    "$2a$10$uRX0CRepZjWVuXp0kAZTROWV/Opfli9la3IC7ZJrl5DL.KPeTi7IO",
                 "Content-Type": "application/json",
             },
         });
