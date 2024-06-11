@@ -1,0 +1,53 @@
+// Продължи с твоя SCSS или обикновен CSS код тук.
+@use "base";
+@use "layouts";
+@use "components";
+
+// global/helper classes
+
+.container {
+    --max-width: 1280px;
+    --sidePadding: 1rem;
+
+    width: min(var(--max-width), (100% - (var(--sidePadding) * 2)));
+    margin-inline: auto;
+}
+
+.color-brown {
+    color: var(--clr-accent) !important;
+}
+.bold-text {
+    font-weight: var(--fw-bold);
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.image--decoration {
+    position: absolute;
+}
+
+.special-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+
+    .line {
+        width: 54px;
+        height: 1px;
+        background-color: var(--clr-primary);
+    }
+    .star-image {
+        margin-inline: 4px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .hidden {
+        opacity: 0;
+    }
+
+    .primary-navigation.Active {
+        display: flex !important;
+        right: 0 !important;
+    }
+}

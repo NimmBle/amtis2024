@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Krystallino" />
+
+        <title>Krystallino</title>
+
+        <link rel="preload" href="/fonts/Manrope/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/Manrope/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/Manrope/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/Manrope/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/Manrope/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin />
+
+        <link rel="preload" href="/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin />
+        <!-- <link rel="stylesheet" href="src/sass/app.css"> -->
+        <style type="text/css">
+            @font-face {
+                font-family: 'Manrope';
+                src: url('/fonts/Manrope/Manrope-Light.eot') format('embedded-opentype'),
+                    url('/fonts/Manrope/Manrope-Light.woff2') format('woff2'),
+                    url('/fonts/Manrope/Manrope-Light.woff') format('woff'),
+                    url('/fonts/Manrope/Manrope-Light.ttf') format('truetype'),
+                    url('/fonts/Manrope/Manrope-Light.svg#Manrope') format('svg');
+                font-weight: 300;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'Manrope';
+                src: url('/fonts/Manrope/Manrope-Regular.eot') format('embedded-opentype'),
+                    url('/fonts/Manrope/Manrope-Regular.woff2') format('woff2'),
+                    url('/fonts/Manrope/Manrope-Regular.woff') format('woff'),
+                    url('/fonts/Manrope/Manrope-Regular.ttf') format('truetype'),
+                    url('/fonts/Manrope/Manrope-Regular.svg#Manrope') format('svg');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'Manrope';
+                src: url('/fonts/Manrope/Manrope-Medium.eot') format('embedded-opentype'),
+                    url('/fonts/Manrope/Manrope-Medium.woff2') format('woff2'),
+                    url('/fonts/Manrope/Manrope-Medium.woff') format('woff'),
+                    url('/fonts/Manrope/Manrope-Medium.ttf') format('truetype'),
+                    url('/fonts/Manrope/Manrope-Medium.svg#Manrope') format('svg');
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'Manrope';
+                src: url('/fonts/Manrope/Manrope-SemiBold.eot') format('embedded-opentype'),
+                    url('/fonts/Manrope/Manrope-SemiBold.woff2') format('woff2'),
+                    url('/fonts/Manrope/Manrope-SemiBold.woff') format('woff'),
+                    url('/fonts/Manrope/Manrope-SemiBold.ttf') format('truetype'),
+                    url('/fonts/Manrope/Manrope-SemiBold.svg#Manrope') format('svg');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'Noto Serif';
+                src: url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.eot') format('embedded-opentype'),
+                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff2') format('woff2'),
+                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff') format('woff'),
+                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.ttf') format('truetype'),
+                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.svg#NotoSerifDisplay') format('svg');
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            body {
+                font-size: 16px;
+                color: #000000;
+                font-family: 'Manrope', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 1;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/src/sass/app.scss" />
+    </head>
+
+    <body>
+        <header id="primary-header" class="primary-header">
+            <div class="container">
+                <div class="navigation-wrapper">
+                    <a class="nav-logo" href="">
+                        <picture >
+                            <source srcset="assets/images/desktop/logo.svg" media="(min-width: 1180px)">
+                            <source srcset="assets/images/mobile/logo.svg" media="(min-width: 270px)">
+                            <img  src="" alt="Krystallino">
+                        </picture>
+                    </a>
+                    <a class="icon-hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>  
+                    <nav class="primary-navigation">
+                        <a href="#desserts-showcase-section" class="navigation-links">Нашите десерти</a>
+                        <a href="#client-feedback-section" class="navigation-links">Отзиви</a>
+                        <a href="#dessert-details-section" class="navigation-links">За поръчки и запитвания</a>
+                        <a href="#client-feedback-section" class="navigation-links">Препоръки</a>
+                        <a href="#what-the-media-says-section" class="navigation-links">Медиите за нас</a>
+                        <a href="#footer" class="navigation-links">Контакти</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero-section" class="hero-section">
+                <div class="container">
+                    <div class="hero-content-wrapper">
+
+
+                        <img class="image--decoration left-strawberry" src="assets/images/desktop/strawberry-decoration-image.svg" alt="">
+                        <img class="image--decoration right-mint" src="assets/images/desktop/mint-decoration-image.svg" alt="">
+                        
+                        <h1 class="display-title | title">Десерти Kristallino – където
+                            <span class="color-brown"> изкуството </span>  
+                            среща 
+                            <span class="color-brown"> десерта </span>.
+                        </h1>
+                        <p class="description | paragraph">Отдайте се на нашите изящни творения, изработени със страст и прецизност от световноизвестния сладкар Кристалин Илиев. Разгледайте нашите иновативни десерти, които обещават да измамят вкусовите ви рецептори и да запалят сетивата ви.</p>
+                        <div class="buttons-wrapper">
+                            <a href="#" class="btn btn--primary">Направи заявка</a>
+                            <a href="#" class="btn btn--secondary">Научи повече</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="desserts-showcase-section" class="desserts-showcase-section">
+                <div class="container">
+                    <img class="image--decoration background-decoration" src="/assets/images/desktop/background-decoration-dessert-display-section.png" alt="">
+                    <div id="showcase-wrapper-js" class="showcase-content-wrapper">
+                        <!-- Generating content with javaScript -->
+                    </div>
+                </div>
+            </section>
+            <section id="chef-section" class="chef-section">
+                <div class="container">
+                    <div class="section-wrapper">
+                        <div class="content-image">
+
+                            <img class="image--decoration left-mustache" src="assets/images/desktop/left-mustache.svg" alt="">
+                            <img class="image--decoration right-mustache" src="assets/images/desktop/right-mustache.svg" alt="">
+
+                            <picture>
+                                <source srcset="assets/images/desktop/chef-image.png">
+                                <img src="" alt="">
+                            </picture>
+                        </div>
+                        <div class="content-text">
+                            <h2 class="secondary-title | title">Chef <br>    Кристалин</h2>
+                            <div class="special-line">
+                                <div class="line"></div>
+                                <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
+                                <div class="line"></div>
+                            </div>
+                            <p class="description | paragraph">Шеф Кристалин Илиев е световноизвестен сладкар, известен със своите иновативни и артистични творения на десерти. С повече от две десетилетия опит, той съчетава традиционни техники с модерни вкусове, завладявайки кулинарния свят чрез своята марка Krystallino. Уникалните десерти на шеф Кристалин, като кисело мляко с орехи и мед или бекон с боровинки, отразяват неговата отдаденост на качеството и креативността, спечелвайки й международно признание и лоялни последователи.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="dessert-details-section" class="dessert-details-section">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 class="secondary-title | title">Десерти</h2>
+                        <div class="special-line">
+                            <div class="line"></div>
+                            <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
+                            <div class="line"></div>
+                        </div>
+                        <p class="description | paragraph paragraph--small"><span>внимателно селектирани вкусове</span></p>
+                    </div>
+                    <div id="dessert-details-wrapper-js" class="dessert-cards-holder">
+                       <!-- Generating content with javaScript -->
+                    </div>
+                    <div class="section-cta">
+                        <p class="description | paragraph">Ако имате интерес към нашите вкусове можете да се свържете с нас , за да уточним цени, методи на достава и условия за съхранение.</p>
+                        <a href="#" class="btn btn--primary">Направи заявка</a>
+                    </div>
+                </div>
+            </section>
+            <section id="client-feedback-section" class="client-feedback-section">
+                <div class="container">
+                    <div class="content-wrapper">
+                        <div class="content-heading">
+                            <div class="content-title">
+                                <img class="image--decoration walnut-image" src="assets/images/desktop/walnut-decoration-image.svg" alt="">
+                                <h2 class="secondary-title | title">Отзиви от клиенти</h2>
+                            </div>
+                            <div class="special-line">
+                                <div class="line"></div>
+                                <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="feedbacks-wrapper">
+                            <div class="client-feedback">
+                                <p class="author"> <span class="bold-text"> Майкъл Томпсън </span> – ⭐⭐⭐⭐⭐ </p>
+                                <p class="description | paragraph">„Имах удоволствието да опитам десерта с ягоди и босилек и той надмина всички очаквания. Свежестта на ягодите, съчетана с фината нотка на босилек, беше истинско откровение. Нямам търпение да поръчайте отново!"
+                                </p>
+                            </div>
+                            <div class="client-feedback">
+                                <p class="author"> <span class="bold-text"> Майкъл Томпсън </span> – ⭐⭐⭐⭐⭐ </p>
+                                <p class="description | paragraph">„Имах удоволствието да опитам десерта с ягоди и босилек и той надмина всички очаквания. Свежестта на ягодите, съчетана с фината нотка на босилек, беше истинско откровение. Нямам търпение да поръчайте отново!"
+                                </p>
+                            </div>
+                            <div class="client-feedback">
+                                <p class="author"> <span class="bold-text"> Майкъл Томпсън </span> – ⭐⭐⭐⭐⭐ </p>
+                                <p class="description | paragraph">„Имах удоволствието да опитам десерта с ягоди и босилек и той надмина всички очаквания. Свежестта на ягодите, съчетана с фината нотка на босилек, беше истинско откровение. Нямам търпение да поръчайте отново!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-us-section" class="contact-us-section">
+                <div class="container"> 
+                    <div class="section-heading">
+                        <h2 class="secondary-title | title">Запитвания <br> и заявки</h2>
+                        <div class="special-line">
+                            <div class="line"></div>
+                            <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
+                            <div class="line"></div>
+                        </div>
+                        <p class="description ~ paragraph">За да направите поръчка или запитване за нашите десерти, моля свържете се с нас на: </p>
+                    </div>
+                    <div class="info-form-wrapper">
+                        <div class="info">
+                            <div class="item">
+                                <p class="label">Имейл: </p>
+                                <p class="text">info@krystallino.com </p>
+                            </div>
+                            <div class="item">
+                                <p class="label">Адрес: </p>
+                                <p class="text">123 Вкусната улица, Девин, България</p>
+                            </div>
+                            <div class="item">
+                                <p class="label">Телефон: </p>
+                                <p class="text">+359 (899) 456-7890 </p>
+                            </div>
+                        </div>
+                        <div class="contact-us-form-holder">
+                            <img class="image--decoration right-mint" src="assets/images/desktop/mint-decoration-image-contact.svg" alt="">
+                            <form id="contact-form" class="form" action="http://localhost:4000/form_submissions" method="POST">
+                                <div>
+                                    <label class="form-label" for="first-name">Вашите имена</label>
+                                    <input class="input-field" name="first-name" placeholder="Placeholder">
+                                </div>
+                                
+                                <div>
+                                    <label class="form-label" for="telephone-number">Телефон за връзка</label>
+                                    <input class="input-field" name="telephone-number" placeholder="Placeholder">
+                                </div>    
+                                <label class="form-label" for="email">Имейл за контакт</label><br>
+                                <input type="" class="input-field" name="email" placeholder="Placeholder"><br>
+                                    
+                                <label class="form-label" for="question">Вашият въпрос или заявка</label><br>
+                                <input type="text" class="input-field text-field" name="question" placeholder="Placeholder"><br>
+                            
+                                <button type="submit" class="btn btn--primary">Направи заявка</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="what-the-media-says-section" class="what-the-media-says-section">
+                <img class="image--decoration mint-left" src="assets/images/desktop/mint-decoration-image-media.svg" alt="">
+                <img class="image--decoration mint-right" src="assets/images/desktop/mint-decoration-image-media-right.svg" alt="">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 class="secondary-title | title">В медиите</h2>
+                        <div class="special-line">
+                            <div class="line"></div>
+                            <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="all-articles">
+                        <article class="media-item">
+                            <p class="constant text-uppercase">В медиите: </p>
+                            <h3 class="tertiary-heading | title">Krystallino: Предефиниране на иновациите в десерта
+                            </h3>
+                            <p class="source">Източник: сп. Кулинарни изкушения</p>
+                            <p class="description | paragraph">Krystallino, ръководен от известния сладкар Кристалин Илчев, революционизира десертната сцена с иновативните си творения. От кремообразното кисело мляко, орехи и меден десерт до неочакваното съчетание на бекон и боровинки, всяко лакомство е щателно изработено, за да измами вкусовите пъпки и да разшири границите на вкуса. С фокус върху качествените съставки и вниманието към детайла, Krystallino продължава да завладява публиката и да предефинира иновациите в десертите.
+                            </p>
+                            <a href="#" class="btn btn--primary">Прочети статията</a>
+                        </article>  
+                        <article class="media-item">
+                            <p class="constant text-uppercase">В медиите: </p>
+                            <h3 class="tertiary-heading | title">Krystallino: A Sweet Success Story </h3>
+                            <p class="source">Източник: сп. Кулинарни изкушения</p>
+                            <p class="description | paragraph">Krystallino, ръководен от известния сладкар Кристалин Илчев, революционизира десертната сцена с иновативните си творения. От кремообразното кисело мляко, орехи и меден десерт до неочакваното съчетание на бекон и боровинки, всяко лакомство е щателно изработено, за да измами вкусовите пъпки и да разшири границите на вкуса. С фокус върху качествените съставки и вниманието към детайла, Krystallino продължава да завладява публиката и да предефинира иновациите в десертите.
+                            </p>
+                            <a href="#" class="btn btn--primary">Прочети статията</a>
+                        </article>  
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <img class="image--decoration background-decoration" src="/assets/images/desktop/background-decoration-footer.png" alt="">
+                <div class="footer-content-wrapper">
+                    <img src="assets/images/desktop/footer-walnuts.svg" alt="">
+                    <img src="assets/images/desktop/logo-footer.svg" alt="">
+                    <div class="contact-info">
+                        <p>info@krystallino.com </p>
+                        <p>+359 (899) 456-7890 </p>
+                    </div>
+                    <nav class="secondary-navigation">
+                        <a href="#desserts-showcase-section" class="navigation-links">Нашите десерти</a>
+                        <a href="#client-feedback-section" class="navigation-links">Отзиви</a>
+                        <a href="#dessert-details-section" class="navigation-links">За поръчки и запитвания</a>
+                        <a href="#client-feedback-section" class="navigation-links">Препоръки</a>
+                        <a href="#what-the-media-says-section" class="navigation-links">Медиите за нас</a>
+                        <a href="#footer" class="navigation-links">Контакти</a>
+                    </nav>
+                    <div class="policies-and-copyright">
+                        <a class="footer-links" href="#"> Правила и условия </a>
+                        <a class="footer-links" href="#"> Политика за поверителност </a>
+                        <p class="right">Copyright © 2024 Krystallino. Всички права запазени.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
+</html>

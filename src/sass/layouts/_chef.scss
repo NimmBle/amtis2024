@@ -1,0 +1,49 @@
+.chef-section {
+    margin-bottom: 94px;
+
+    .container {
+        .section-wrapper {
+            margin-inline: 80px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 96px;
+
+            .content-image {
+                position: relative;
+
+                .left-mustache {
+                    top: 200px;
+                    left: 65px;
+                }
+
+                .right-mustache {
+                    top: 215px;
+                    right: 65px;
+                }
+            }
+
+            .content-text {
+                .secondary-title {
+                    line-height: 100%;
+                    margin-bottom: 32px;
+                }
+
+                .description {
+                    max-width: 743;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .section-wrapper {
+        grid-template-columns: 1fr !important;
+        place-items: center;
+        margin-inline: 16px !important;
+    }
+
+    .content-image {
+        width: 40%;
+    }
+}

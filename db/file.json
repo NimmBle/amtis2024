@@ -1,0 +1,181 @@
+{
+  "desserts": [
+    {
+      "id": "1",
+      "name": "Ягоди и босилек",
+      "description_short": "Насладете се на перфектния баланс на кремообразно кисело мляко, хрупкави орехи и сладък мед в този райски десерт.",
+      "description_long": "Кремообразен десерт на основата на кисело мляко, наситен със земното богатство на орехи и сладостта на меда, създавайки хармонична комбинация от вкусове и текстури.",
+      "image": "strawberry-and-basil.svg",
+      "ingredients_text": "кисело мляко, орехи, мед, захар, желатин (за консистенция), ванилов екстракт",
+      "nutrition": {
+        "calories": 200,
+        "totalFat": 12,
+        "saturatedFat": 3,
+        "totalCarbs": 20,
+        "protein": 6,
+        "sugars": 15,
+        "sodium": 50,
+        "cholesterol": 15
+      }
+    },
+    {
+      "id": "2",
+      "name": "Орехи и мед",
+      "description_short": "Сладкарски шедьовър, вдъхновен от традиционния български десерт баклава, съчетаващ хрупкави орехи и сладък мед.",
+      "description_long": "Сладкарски шедьовър, вдъхновен от традиционния български десерт баклава, съчетаващ хрупкави орехи и сладък мед, обгърнати в нежно сладко тесто.",
+      "image": "walnuts-and-honey.svg",
+      "ingredients_text": "орехи, мед, захар, масло, ванилов екстракт, сладко тесто",
+      "nutrition": {
+        "calories": 200,
+        "totalFat": 12,
+        "saturatedFat": 3,
+        "totalCarbs": 20,
+        "protein": 6,
+        "sugars": 15,
+        "sodium": 50,
+        "cholesterol": 15
+      }
+    },
+    {
+      "id": "3",
+      "name": "Бекон и боровинки",
+      "description_short": "Съчетание на солен бекон и сладки боровинки, което ще ви изненада и ще ви остави с усещане за изтънчен вкус.",
+      "description_long": "Неочаквано съчетание на солен бекон и сладки боровинки, което ще ви изненада и ще ви остави с усещане за изтънчен вкус.",
+      "image": "bacon-and-blueberry.svg",
+      "ingredients_text": "бекон, боровинки, захар, масло, ванилов екстракт, сладко тесто",
+      "nutrition": {
+        "calories": 200,
+        "totalFat": 12,
+        "saturatedFat": 3,
+        "totalCarbs": 20,
+        "protein": 6,
+        "sugars": 15,
+        "sodium": 50,
+        "cholesterol": 15
+      }
+    },
+    {
+      "id": "4",
+      "name": "Хрупкави слънчогледови семки",
+      "description_short": "Сладкарски шедьовър, вдъхновен от традиционния български десерт баклава, съчетаващ хрупкави орехи и сладък мед.",
+      "description_long": "Сладкарски шедьовър, вдъхновен от традиционния български десерт баклава, съчетаващ хрупкави орехи и сладък мед, обгърнати в нежно сладко тесто.",
+      "image": "crispy-sunflower-seed-with-cream.svg",
+      "ingredients_text": "орехи, мед, захар, масло, ванилов екстракт, сладко тесто",
+      "nutrition": {
+        "calories": 200,
+        "totalFat": 12,
+        "saturatedFat": 3,
+        "totalCarbs": 20,
+        "protein": 6,
+        "sugars": 15,
+        "sodium": 50,
+        "cholesterol": 15
+      }
+    }
+  ],
+  "form_submissions": [
+    {
+      "id": "fc27"
+    },
+    {
+      "id": "02ed"
+    },
+    {
+      "id": "ecce"
+    },
+    {
+      "id": "c763"
+    },
+    {
+      "id": "dd98"
+    },
+    {
+      "id": "cc0c"
+    },
+    {
+      "id": "f535"
+    },
+    {
+      "id": "f26c"
+    },
+    {
+      "id": "7140"
+    },
+    {
+      "id": "533b"
+    },
+    {
+      "id": "9741"
+    },
+    {
+      "id": "e954"
+    },
+    {
+      "id": "9148"
+    },
+    {
+      "id": "1182"
+    },
+    {
+      "id": "b44a"
+    },
+    {
+      "id": "2749"
+    },
+    {
+      "id": "900e",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    },
+    {
+      "id": "aec3"
+    },
+    {
+      "id": "de71"
+    },
+    {
+      "id": "fe80",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    },
+    {
+      "id": "8368",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    },
+    {
+      "id": "92e8",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    },
+    {
+      "id": "1e98",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    },
+    {
+      "id": "77c6",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    },
+    {
+      "id": "d38e",
+      "first-name": "asddas",
+      "telephone-number": "dsasdsa",
+      "email": "dasdsad",
+      "question": "dasdsa"
+    }
+  ]
+}

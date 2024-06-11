@@ -1,0 +1,28 @@
+.btn {
+  padding: 8px 18px;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  border-radius: 32px;
+  border: none;
+  align-self: center;
+  
+  &.btn--primary {
+    background-color: var(--clr-primary);
+    color: #fff;
+   
+  }
+
+  &.btn--secondary {
+    background-color: transparent;
+    border: 1px solid var(--clr-buttons);
+    color: var(--clr-buttons)
+  }
+
+  &.btn--no-text {
+    color: var(--clr-primary);
+    background-color: transparent;
+    font-size: var(--fs-100);
+    text-transform: uppercase;
+    font-weight: var(--fw-semiBold);
+  }
+}

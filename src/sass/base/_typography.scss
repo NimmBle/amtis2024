@@ -1,0 +1,106 @@
+:root {
+
+  --ff-primary: 'Manrope';
+  --ff-secondary: 'Noto Serif';
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+  --fw-extraBold: 800;
+  
+  --fs-100: 0.6875rem;
+  --fs-200: .8125rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-450: 1.5rem;
+  --fs-500: 1.875rem;
+  --fs-550: 2.25rem;
+  --fs-600: 3.125rem;
+  --fs-700: 3.5rem;
+  --fs-900: 5rem;
+
+  --fs-body: var(--fs-300)
+}
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-primary);
+  background-color: var(--clr-body-background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary);
+  font-weight: var(--fw-semiBold);
+  font-size: var(--fs-400);
+}
+
+.display-title {
+  color: var(--clr-primary);
+  line-height: 100%;
+  letter-spacing: -1.1%;
+}
+
+.title {
+  font-size: var(--fs-900);
+  font-family: var(--ff-secondary);
+}
+
+
+.paragraph {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  line-height: 150%;
+  color: var(--clr-neutral-800);
+  
+  &.paragraph--small {
+    font-size: var(--fs-200)
+  }
+}
+
+
+.nutrient-name {
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+}
+
+.nutrient-amount{
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-550);
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 1238px) {
+  :root {
+
+    --fs-100: 0.6875rem;
+    --fs-200: .8125rem;
+    --fs-300: .8125rem;
+    --fs-400: 1rem;
+    --fs-450: 1.25rem;
+    --fs-500: 1.5rem;
+    --fs-550: 2rem;
+    --fs-600: 2.75rem;
+    --fs-700: 3rem;
+    --fs-900: 4rem;
+
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+
+    --fs-100: 0.6875rem;
+    --fs-200: .8125rem;
+    --fs-300: .8125rem;
+    --fs-400: 1rem;
+    --fs-450: 1.125rem;
+    --fs-500: 1.425rem;
+    --fs-550: 1.75rem;
+    --fs-600: 2.25rem;
+    --fs-700: 2.5rem;
+    --fs-900: 3.5rem;
+
+  }
+}
