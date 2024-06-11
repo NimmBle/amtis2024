@@ -1,16 +1,14 @@
 // Продължи с твоя vanilla JavaScript код тук.
 
-
 // async function getAllData() {
 //   const response = await fetch("http://localhost:4000/desserts");
 //   const desserts = await response.json();
 
-//   var allDesesrtNames = document.querySelectorAll('.dessert-name'); 
+//   var allDesesrtNames = document.querySelectorAll('.dessert-name');
 //   var allShortDescriptions = document.querySelectorAll('.description--showcase');
 //   var allIngridiens = document.querySelectorAll('.ingridientsToChange');
 //   var allImagesShowcase = document.querySelectorAll('.sourceOfImageToChangeShowcase');
 //   var allImagesDetails = document.querySelectorAll('.sourceOfImageToChange');
-
 
 //   // console.log(allImages[0].srcset);
 //   for (let index = 0; index < allDesesrtNames.length; index++) {
@@ -24,34 +22,40 @@
 // }
 // getAllData();
 
-
-const hamburger = document.querySelector('.icon-hamburger');
+const hamburger = document.querySelector(".icon-hamburger");
 const navLinks = document.querySelector(".primary-navigation");
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("Active");
     hamburger.classList.toggle("open");
 });
 
-
+const url = "https://api.jsonbin.io/v3/c/666852e0e41b4d34e401ca3f/latest";
 
 async function getAllData() {
-  try {
-    const response = await fetch('http://localhost:4000/desserts');
-    const responseAsJson = await response.json();
-    return responseAsJson;
-  } 
-  catch (error) {
-    console.log(error)
-  }
+    try {
+        const response = await fetch("http://localhost:4000/desserts", {
+            headers: {
+                "X-Master-Key":
+                    "$2a$10$k5K7S3FMsdynDI8ZI6/YeOY0bK.zGXjegol2aeliGb.XZ4NxhEY8C",
+                "Content-Type": "application/json",
+            },
+        });
+        const responseAsJson = await response.json();
+        return responseAsJson;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function GenerateHTML() {
-  const data = await getAllData();
-  var sectionWrapper = document.getElementById("showcase-wrapper-js");
-  var detailedSectionWrapper = document.getElementById("dessert-details-wrapper-js");
+    const data = await getAllData();
+    var sectionWrapper = document.getElementById("showcase-wrapper-js");
+    var detailedSectionWrapper = document.getElementById(
+        "dessert-details-wrapper-js"
+    );
 
-  for (let i = 0; i < data.length; i++) {
-   sectionWrapper.innerHTML += `
+    for (let i = 0; i < data.length; i++) {
+        sectionWrapper.innerHTML += `
    <div class="dessert-card">
      <picture class="image-holder">
          <source class="sourceOfImageToChangeShowcase" srcset="assets/images/desktop/${data[i].image}">
@@ -69,9 +73,9 @@ async function GenerateHTML() {
              научете повече
          </a>
      </div>
-   </div>`
-    
-   detailedSectionWrapper.innerHTML += `
+   </div>`;
+
+        detailedSectionWrapper.innerHTML += `
    <div class="dessert-detailed-card">
       <picture>
           <source class="sourceOfImageToChange" srcset="assets/images/desktop/${data[i].image}">
@@ -124,15 +128,13 @@ async function GenerateHTML() {
               </div>
           </div>  
       </div>
-   </div>`
-  }
+   </div>`;
+    }
 }
 
 GenerateHTML();
 
-async function submitForm() {
-    
-}
+async function submitForm() {}
 
 // var form = document.getElementsByClassName('form');
 // form.addEventListener('submit', async function (e) {
@@ -149,20 +151,19 @@ form.addEventListener("submit", async (event) => {
     const formData = new FormData(form);
 
     var object = {};
-    formData.forEach(function(value, key){
+    formData.forEach(function (value, key) {
         object[key] = value;
     });
 
     var json = JSON.stringify(object);
 
     try {
-        const request = await fetch('http://localhost:4000/form_submissions', {
+        const request = await fetch("http://localhost:4000/form_submissions", {
             method: "POST",
-            body: json
-    })
-        alert('Form submited');
-
+            body: json,
+        });
+        alert("Form submited");
     } catch (error) {
         console.error(error);
     }
-  });
+});
