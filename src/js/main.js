@@ -33,7 +33,7 @@ const url = "https://api.jsonbin.io/v3/c/666852e0e41b4d34e401ca3f/latest";
 
 async function getAllData() {
     try {
-        const response = await fetch("http://localhost:4000/desserts", {
+        const response = await fetch(url, {
             headers: {
                 "X-Master-Key":
                     "$2a$10$k5K7S3FMsdynDI8ZI6/YeOY0bK.zGXjegol2aeliGb.XZ4NxhEY8C",
