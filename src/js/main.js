@@ -40,7 +40,7 @@ async function getAllData() {
                 "Content-Type": "application/json",
             },
         });
-        const responseAsJson = await response.record.json();
+        const responseAsJson = await response.json();
         return responseAsJson;
     } catch (error) {
         console.log(error);
