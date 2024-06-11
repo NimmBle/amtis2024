@@ -49,106 +49,93 @@ async function getAllData() {
 
 async function GenerateHTML() {
     const data = await getAllData();
-    var sectionWrapper = document.getElementById("showcase-wrapper-js");
-    var detailedSectionWrapper = document.getElementById(
+    var sectionWrapper = await document.getElementById("showcase-wrapper-js");
+    var detailedSectionWrapper = await document.getElementById(
         "dessert-details-wrapper-js"
     );
 
     for (let i = 0; i < data.length; i++) {
         sectionWrapper.innerHTML += `
-   <div class="dessert-card">
-     <picture class="image-holder">
-         <source class="sourceOfImageToChangeShowcase" srcset="assets/images/desktop/${data[i].image}">
-         <img class="dessert-image" src="" alt="">
-     </picture>
-     <div class="card-content">
-         <div class="special-line">
-             <div class="line"></div>
-             <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
-             <div class="line"></div>
-         </div>
-         <h2 class="dessert-name">${data[i].name}</h2>
-         <p class="description description--showcase  | paragraph paragraph--small">${data[i].description_short}</p>
-         <a href="#" class="btn btn--no-text">
-             научете повече
-         </a>
-     </div>
-   </div>`;
+                <div class="dessert-card">
+                    <picture class="image-holder">
+                        <source class="sourceOfImageToChangeShowcase" srcset="assets/images/desktop/${data[i].image}">
+                        <img class="dessert-image" src="" alt="">
+                    </picture>
+                    <div class="card-content">
+                        <div class="special-line">
+                            <div class="line"></div>
+                            <img class="star-image" src="assets/images/desktop/star-decoration.svg" alt="">
+                            <div class="line"></div>
+                        </div>
+                        <h2 class="dessert-name">${data[i].name}</h2>
+                        <p class="description description--showcase  | paragraph paragraph--small">${data[i].description_short}</p>
+                        <a href="#" class="btn btn--no-text">
+                            научете повече
+                        </a>
+                    </div>
+                </div>`;
 
         detailedSectionWrapper.innerHTML += `
-   <div class="dessert-detailed-card">
-      <picture>
-          <source class="sourceOfImageToChange" srcset="assets/images/desktop/${data[i].image}">
-          <img class="dessert-image" src="" alt="">
-      </picture>
-      <div class="dessert-text | title">
-          <h3 class="tertiary-heading">${data[i].name}</h3>
-          <p class="description | paragraph ">${data[i].description_long}</p>
-          <p class="main-ingridients | paragraph"> <span class="bold-text">Основни съставки:</span><span class="ingridientsToChange">${data[i].ingredients_text}. </span></p>
-      </div>
-      <div class="dessert-nutrients">
-          <div class="grid-row">
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Калории: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.calories}</p>
-              </div>
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Общо мазнини: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.totalFat}</p>
-              </div>
-          </div>
-          <div class="grid-row">
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Наситени мазнини: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.saturatedFat}</p>
-              </div>
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Общо въглехидрати:<br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.totalCarbs}</p>
-              </div>
-          </div>
-          <div class="grid-row">
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Протеин: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.protein}</p>
-              </div>
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Захари: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.sugars}</p>
-              </div>
-          </div>
-          <div class="grid-row">
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Натрий: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.sodium}</p>
-              </div>
-              <div class="nutrient-box">
-                  <p class="nutrient-name">Холестерол: <br></p>
-                  <p class="nutrient-amount">${data[i].nutrition.cholesterol}</p>
-              </div>
-          </div>  
-      </div>
-   </div>`;
+            <div class="dessert-detailed-card">
+                <picture>
+                    <source class="sourceOfImageToChange" srcset="assets/images/desktop/${data[i].image}">
+                    <img class="dessert-image" src="" alt="">
+                </picture>
+                <div class="dessert-text | title">
+                    <h3 class="tertiary-heading">${data[i].name}</h3>
+                    <p class="description | paragraph ">${data[i].description_long}</p>
+                    <p class="main-ingridients | paragraph"> <span class="bold-text">Основни съставки:</span><span class="ingridientsToChange">${data[i].ingredients_text}. </span></p>
+                </div>
+                <div class="dessert-nutrients">
+                    <div class="grid-row">
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Калории: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.calories}</p>
+                        </div>
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Общо мазнини: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.totalFat}</p>
+                        </div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Наситени мазнини: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.saturatedFat}</p>
+                        </div>
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Общо въглехидрати:<br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.totalCarbs}</p>
+                        </div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Протеин: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.protein}</p>
+                        </div>
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Захари: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.sugars}</p>
+                        </div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Натрий: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.sodium}</p>
+                        </div>
+                        <div class="nutrient-box">
+                            <p class="nutrient-name">Холестерол: <br></p>
+                            <p class="nutrient-amount">${data[i].nutrition.cholesterol}</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>`;
     }
 }
 window.addEventListener("DOMContentLoaded", () => {
-    GenerateHTML();
-})
+    await GenerateHTML();
 
-
-async function submitForm() {}
-
-// var form = document.getElementsByClassName('form');
-// form.addEventListener('submit', async function (e) {
-//     const formData = new FormData(form).entries();
-//     const request = await fetch('http://localhost:4000/form_submissions', {
-//         method: "POST",
-//         body: formData.json()
-//       })
-// })
-
-const form = document.querySelector("#contact-form");
-form.addEventListener("submit", async (event) => {
+    const form = document.querySelector("#contact-form");
+    form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const formData = new FormData(form);
 
@@ -169,3 +156,18 @@ form.addEventListener("submit", async (event) => {
         console.error(error);
     }
 });
+})
+
+
+async function submitForm() {}
+
+// var form = document.getElementsByClassName('form');
+// form.addEventListener('submit', async function (e) {
+//     const formData = new FormData(form).entries();
+//     const request = await fetch('http://localhost:4000/form_submissions', {
+//         method: "POST",
+//         body: formData.json()
+//       })
+// })
+
+
